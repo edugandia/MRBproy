@@ -1,18 +1,22 @@
 [
     {
         "id": 0,
-        "image": ""
-    },{
+        "image": "./images/proyects/p1.jpg"
+    },
+    {
         "id": 1,
-        "image": ""
+        "image": "./images/proyects/p2.jpg"
     },{
         "id": 2,
-        "image": ""
+        "image": "./images/proyects/p3.jpg"
     },{
         "id": 3,
-        "image": ""
+        "image": "./images/proyects/p2.jpg"
     },{
         "id": 4,
-        "image": ""
+        "image": "./images/proyects/p3.jpg"
+    },{
+        "id": 5,
+        "image": "./images/proyects/p4.jpg"
     }
 ]

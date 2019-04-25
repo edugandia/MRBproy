@@ -8,7 +8,7 @@ export default class Header extends Component {
     return (
       <header id="header-container">
         <CarouselAuto
-        secondsOfInterval={5} />
+        secondsOfInterval={8} />
       </header>
     );
   }

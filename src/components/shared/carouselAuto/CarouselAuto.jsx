@@ -46,32 +46,34 @@ export default class CarouselAuto extends Component {
           <div className="button-container">
             <img
               onClick={() => this.changePosition("substract")}
-              src="./images/left-arrow.png"
+              src="./images/arrow-left.png"
               alt="left-arrow"
             />
+          </div>
+          <div className="button-container">
             <img
               onClick={() => this.changePosition("add")}
-              src="./images/right-arrow.png"
-              alt="left-arrow"
+              src="./images/arrow-right.png"
+              alt="rigth-arrow"
             />
           </div>
-          <div className="image-container">
-            <img
-              src={ListOfProyects[this.state.position].image}
-              alt={`img-${this.state.position}`}
-            />
-          </div>
-          <div className="points-controller">
-            {ListOfProyects.map((proy, i) => {
-              return (
-                <div
-                  onClick={() => this.selectPosition(i)}
-                  className={`point ${this.state.position === i && "selected"}`}
-                  key={i}
-                />
-              );
-            })}
-          </div>
+        </div>
+        <div className="image-container">
+          <img
+            src={ListOfProyects[this.state.position].image}
+            alt={`img-${this.state.position}`}
+          />
+        </div>
+        <div className="points-controller">
+          {ListOfProyects.map((proy, i) => {
+            return (
+              <div
+                onClick={() => this.selectPosition(i)}
+                className={`point ${this.state.position === i && "selected"}`}
+                key={i}
+              />
+            );
+          })}
         </div>
       </div>
     );
