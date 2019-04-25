@@ -4,7 +4,7 @@ import './Contact.scss';
 export default class Contact extends Component {
   render() {
     return (
-      <div>
+      <div id="contact-general-container">
         
       </div>
     )

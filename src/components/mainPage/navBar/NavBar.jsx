@@ -18,26 +18,26 @@ export default class NavBar extends Component {
     return (
       <nav className="navBar-general-container">
         <img
-          onClick={() => scrollToId("header-general-container", true)}
+          onClick={() => scrollToId("header-general-container")}
           src="./logo.png"
           alt="logo"
         />
         <div className="nav-links-container">
           <h4
             className="nav-link"
-            onClick={() => scrollToId("proyects-general-container", true)}
+            onClick={() => scrollToId("proyects-general-container")}
           >
             PROYECTOS
           </h4>{" "}
           <h4
             className="nav-link"
-            onClick={() => scrollToId("services-general-container", true)}
+            onClick={() => scrollToId("services-general-container")}
           >
             SERVICIOS
           </h4>{" "}
           <h4
             className="nav-link"
-            onClick={() => scrollToId("contact-general-container", true)}
+            onClick={() => scrollToId("contact-general-container")}
           >
             CONTACTO
           </h4>
@@ -50,7 +50,7 @@ export default class NavBar extends Component {
             <h4
               className="nav-link-mb"
               onClick={() => {
-                scrollToId("proyects-general-container", true);
+                scrollToId("proyects-general-container");
                 this.menuToggle();
               }}
             >
@@ -59,7 +59,7 @@ export default class NavBar extends Component {
             <h4
               className="nav-link-mb"
               onClick={() => {
-                scrollToId("services-general-container", true);
+                scrollToId("services-general-container");
                 this.menuToggle();
               }}
             >
@@ -68,7 +68,7 @@ export default class NavBar extends Component {
             <h4
               className="nav-link-mb"
               onClick={() => {
-                scrollToId("contact-general-container", true);
+                scrollToId("contact-general-container");
                 this.menuToggle();
               }}
             >

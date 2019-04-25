@@ -1,9 +1,6 @@
-const scrollToId = (id, isSmooth) => {
-  let aux;
-  if (isSmooth) {
-    aux = { behavior: "smooth" };
-  }
+const scrollToId = id => {
+  console.log("pasa", id)
   const elementToScroll = document.getElementById(id);
-  elementToScroll.scrollIntoView({ aux });
+  elementToScroll.scrollIntoView({ behavior: "smooth" });
 };
 export default scrollToId;

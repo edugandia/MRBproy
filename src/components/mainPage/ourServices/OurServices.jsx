@@ -26,7 +26,7 @@ export default class OurServices extends Component {
       }
     ];
     return (
-      <section className="services-general-container">
+      <section id="services-general-container">
         <div className="services-container">
           <div className="services-title">
             <h2>NUESTROS SERVICIOS</h2>
