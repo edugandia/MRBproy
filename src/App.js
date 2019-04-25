@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" render={() => <MainPage />} />
-        <Route exact path="/" render={() => <LegalPage />} />
+        <Route exact path="/aviso-legal" render={() => <LegalPage />} />
       </Switch>
     </div>
   );
