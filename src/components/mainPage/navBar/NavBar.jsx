@@ -36,7 +36,7 @@ export default class NavBar extends Component {
       >
         <img
           onClick={() => scrollToId("header-container")}
-          src="./logo.png"
+          src="./images/logo.png"
           alt="logo"
         />
         <div className="nav-links-container">
