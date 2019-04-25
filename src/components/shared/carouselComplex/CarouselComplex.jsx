@@ -4,14 +4,51 @@ import "./CarouselComplex.scss";
 export default class CarouselComplex extends Component {
   constructor() {
     super();
-    this.state = {
-      proyectSelected: this.props.dataJSON[0]
-    };
+    this.state = {};
   }
 
-  proyectSelector=proyectSelected=>{
-      this.setState({...this.state, proyectSelected})
+  componentWillMount() {
+    this.proyectSelector(this.props.dataJSON[0]);
+    // const lastImage = this.props.dataJSON[0].images.length - 1;
+    // const imagesToShow = this.props.dataJSON[0].images;
+    // this.setState({
+    //   ...this.state,
+    //   proyectSelected: this.props.dataJSON[0],
+    //   lastImage,
+    //   imagesToShow
+    // });
   }
+
+  proyectSelector = proyectSelected => {
+    const lastImage = proyectSelected.images.length - 1;
+    const imagesToShow = proyectSelected.images;
+    this.setState({
+      ...this.state,
+      proyectSelected,
+      lastImage,
+      imagesToShow,
+      imageSelected: 0
+    });
+  };
+
+  imageSelectedSelector = imageSelected => {
+    this.setState({ ...this.state, imageSelected });
+  };
+
+  imageSelectedNavigator = operation => {
+    let imageSelected = this.state.imageSelected;
+    if (operation === "add") {
+      imageSelected === this.state.lastImage
+        ? (imageSelected = 0)
+        : imageSelected++;
+    }
+    if (operation === "substract") {
+      imageSelected === 0
+        ? (imageSelected = this.state.lastImage)
+        : imageSelected--;
+    }
+    this.setState({ ...this.state, imageSelected });
+  };
 
   render() {
     return (
@@ -27,9 +64,14 @@ export default class CarouselComplex extends Component {
             </div>
           </div>
           <div className="thumbnails-carousel-container">
-            {this.props.dataJSON((element, i) => {
+            {this.props.dataJSON.map((element, i) => {
               return (
-                <div onClick={()=>this.proyectSelector(element)} className="thumbnail-image" key={i}>
+                <div
+                  onClick={() => this.proyectSelector(element)}
+                  className={`thumbnail-image ${this.state.proyectSelected
+                    .id === element.id && "border"}`}
+                  key={i}
+                >
                   <img src={element.thumbnailImage} alt={element.name} />
                 </div>
               );
@@ -37,22 +79,38 @@ export default class CarouselComplex extends Component {
           </div>
         </div>
         <div className="carouselcomplex-image-container">
-          {/* <div className="image">
-            <img src="" alt="" />
+          <div className="image">
+            <img
+              src={this.state.imagesToShow[this.state.imageSelected]}
+              alt={this.state.imageSelected}
+            />
           </div>
           <div className="navigation-controller">
-            <div className="button-container">
+            <div
+              onClick={() => this.imageSelectedNavigator("substract")}
+              className="button-container"
+            >
               <img src="./images/arrow-left" alt="arrow-left" />
             </div>
-            <div className="button-container">
+            <div
+              onClick={() => this.imageSelectedNavigator("add")}
+              className="button-container"
+            >
               <img src="./images/arrow-right" alt="arrow-rigth" />
             </div>
           </div>
           <div className="points-controller">
-            {this.props.dataJSON.map((element, i) => {
-              return <div className="point" />;
+            {this.state.proyectSelected.images.map((element, i) => {
+              return (
+                <div
+                  onClick={() => this.imageSelectedSelector(i)}
+                  className={`point ${this.state.imageSelected === i &&
+                    "selected"}`}
+                  key={i}
+                />
+              );
             })}
-          </div> */}
+          </div>
         </div>
       </div>
     );
