@@ -1,0 +1,24 @@
+.service-box-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  p {
+    width: 60%;
+    text-align: center;
+  }
+  .button-link {
+    background-color: #b3cbd1;
+    border-radius: 2px;
+    cursor: pointer;
+    h5 {
+      color: white;
+      margin: 6px 10px;
+    }
+  }
+}
