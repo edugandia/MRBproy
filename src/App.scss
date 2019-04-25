@@ -1,3 +1,30 @@
-.App{
-    background-color: gray;
+.App {
+  background-color: gray;
 }
+
+//FONTS
+
+@font-face {
+  font-family: "marben-title";
+  src: url("./assets/fonts/MavenPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "marben";
+    src: url("./assets/fonts/MavenProLight-300.otf");
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "marben-title";
+}
+
+p{
+    font-family: "marben";
+}
+
+
