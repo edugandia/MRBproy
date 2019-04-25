@@ -9,14 +9,6 @@ export default class CarouselComplex extends Component {
 
   componentWillMount() {
     this.proyectSelector(this.props.dataJSON[0]);
-    // const lastImage = this.props.dataJSON[0].images.length - 1;
-    // const imagesToShow = this.props.dataJSON[0].images;
-    // this.setState({
-    //   ...this.state,
-    //   proyectSelected: this.props.dataJSON[0],
-    //   lastImage,
-    //   imagesToShow
-    // });
   }
 
   proyectSelector = proyectSelected => {
