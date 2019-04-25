@@ -60,7 +60,7 @@ export default class NavBar extends Component {
           </h4>
         </div>
         <div className="menu-mb">
-          <img onClick={this.menuToggle} src="menu.png" alt="menu" />
+          <img onClick={this.menuToggle} src="./images/menu.png" alt="menu" />
         </div>
         {this.state.showMenu && (
           <div className="dropdown-menu">

@@ -7,19 +7,19 @@ export default class OurServices extends Component {
   render() {
     const services = [
       {
-        image: "./images/proyecto-icon.png",
+        image: "./images/proyectos.png",
         title: "Proyectos",
         description: "Creamos proyectos a tu medida.",
         link: "proyects-general-container"
       },
       {
-        image: "./images/decoramos-icon.png",
+        image: "./images/decoramos.png",
         title: "Decoramos",
         description: "Decoramos siguiendo las últimas tendencias",
         link: "decoration-general-container"
       },
       {
-        image: "./images/carries-icon.png",
+        image: "./images/portes.png",
         title: "Portes",
         description: "Transportamos tus cosas a tu nuevo hogar",
         link: "carries-general-container"
@@ -35,7 +35,7 @@ export default class OurServices extends Component {
             {services.map((service, i) => {
               return (
                 <ServiceBox
-                  image={service.img}
+                  image={service.image}
                   title={service.title}
                   description={service.description}
                   link={service.link}
