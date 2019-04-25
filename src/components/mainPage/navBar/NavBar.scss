@@ -1,7 +1,6 @@
 .navBar-general-container {
   z-index: 1;
-  position: sticky;
-//   position: -webkit-sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 70px;
@@ -23,18 +22,20 @@
   width: 100%;
   height: 40vh;
   background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
-  transition: 1s;
 }
 
 @media (min-width: 768px) {
   .navBar-general-container {
-    top: 75px;
+    transition: 1s;
+    top: 0;
     height: 100px;
+    &.on-top {
+      top: 70px;
+    }
   }
 
   .nav-links-container {

@@ -6,9 +6,24 @@ export default class NavBar extends Component {
   constructor() {
     super();
     this.state = {
-      showMenu: false
+      showMenu: false,
+      isOnTop: true
     };
   }
+
+  componentWillMount() {
+    this.isOnTopDetecter();
+  }
+
+  isOnTopDetecter = () => {
+    window.onscroll = () => {
+      if (window.pageYOffset < 100) {
+        this.setState({ ...this.state, isOnTop: true });
+      } else {
+        this.setState({ ...this.state, isOnTop: false });
+      }
+    };
+  };
 
   menuToggle = () => {
     this.setState({ ...this.state, showMenu: !this.state.showMenu });
@@ -16,24 +31,26 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <nav className="navBar-general-container">
+      <nav
+        className={`navBar-general-container ${this.state.isOnTop && "on-top"}`}
+      >
         <img
-          onClick={() => scrollToId("header-general-container")}
+          onClick={() => scrollToId("header-container")}
           src="./logo.png"
           alt="logo"
         />
         <div className="nav-links-container">
           <h4
             className="nav-link"
-            onClick={() => scrollToId("proyects-general-container")}
-          >
-            PROYECTOS
-          </h4>{" "}
-          <h4
-            className="nav-link"
             onClick={() => scrollToId("services-general-container")}
           >
             SERVICIOS
+          </h4>{" "}
+          <h4
+            className="nav-link"
+            onClick={() => scrollToId("proyects-general-container")}
+          >
+            PROYECTOS
           </h4>{" "}
           <h4
             className="nav-link"
@@ -50,20 +67,20 @@ export default class NavBar extends Component {
             <h4
               className="nav-link-mb"
               onClick={() => {
-                scrollToId("proyects-general-container");
-                this.menuToggle();
-              }}
-            >
-              PROYECTOS
-            </h4>{" "}
-            <h4
-              className="nav-link-mb"
-              onClick={() => {
                 scrollToId("services-general-container");
                 this.menuToggle();
               }}
             >
               SERVICIOS
+            </h4>{" "}
+            <h4
+              className="nav-link-mb"
+              onClick={() => {
+                scrollToId("proyects-general-container");
+                this.menuToggle();
+              }}
+            >
+              PROYECTOS
             </h4>{" "}
             <h4
               className="nav-link-mb"
