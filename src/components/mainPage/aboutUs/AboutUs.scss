@@ -1,5 +1,40 @@
-.about-general-container{
-    width: 100%;
-    height: 100vh;
-    
+.about-general-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets//images/background-about.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  .low-opacity-container {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 80%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    .about-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p {
+        text-align: center;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-general-container {
+    height: calc(100vh - 100px);
+    .low-opacity-container {
+      width: 55%;
+      height: 35%;
+    }
+  }
 }
