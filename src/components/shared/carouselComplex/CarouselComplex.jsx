@@ -44,15 +44,18 @@ export default class CarouselComplex extends Component {
 
   render() {
     return (
-      <div className="carouselcomplex-general-container">
+      <div
+        className={`carouselcomplex-general-container ${this.props.isReverse &&
+          "reverse"}`}
+      >
         <div className="carouselcomplex-container">
-          <div className="text">
+          <div className={`text ${this.props.isReverse && "reverse"}`}>
             <div className="title">
               <h2>{this.props.title}</h2>
             </div>
             <div className="text-proyect">
-              <h3>{this.props.name}</h3>
-              <p>{this.props.description}</p>
+              <h3>{this.state.proyectSelected.name}</h3>
+              <p>{this.state.proyectSelected.description}</p>
             </div>
           </div>
           <div className="thumbnails-carousel-container">
@@ -70,26 +73,29 @@ export default class CarouselComplex extends Component {
             })}
           </div>
         </div>
-        <div className="carouselcomplex-image-container">
-          <div className="image">
-            <img
-              src={this.state.imagesToShow[this.state.imageSelected]}
-              alt={this.state.imageSelected}
-            />
-          </div>
+        <div
+          className={`carouselcomplex-image-container ${this.props.isReverse &&
+            "reverse"}`}
+        >
           <div className="navigation-controller">
             <div
               onClick={() => this.imageSelectedNavigator("substract")}
               className="button-container"
             >
-              <img src="./images/arrow-left" alt="arrow-left" />
+              <img src="./images/arrow-left.png" alt="arrow-left" />
             </div>
             <div
               onClick={() => this.imageSelectedNavigator("add")}
               className="button-container"
             >
-              <img src="./images/arrow-right" alt="arrow-rigth" />
+              <img src="./images/arrow-right.png" alt="arrow-rigth" />
             </div>
+          </div>
+          <div className="image-container">
+            <img
+              src={this.state.imagesToShow[this.state.imageSelected]}
+              alt={this.state.imageSelected}
+            />
           </div>
           <div className="points-controller">
             {this.state.proyectSelected.images.map((element, i) => {

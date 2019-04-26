@@ -1,4 +1,10 @@
-#proyects-general-container{
-    width: 100%;
-    min-height: 500px;
+#proyects-general-container {
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media(min-width: 768px){
+  #proyects-general-container{
+    margin-top: 80px;
+  }
 }

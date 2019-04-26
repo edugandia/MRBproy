@@ -1,8 +1,182 @@
 .carouselcomplex-general-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  .carouselcomplex-image-container {
+    width: 100%;
+    height: 100%;
+    .image-container {
+      width: 100%;
+      height: 100%;
+      img {
+        max-width: 100%;
+        height: 40vh;
+        object-fit: cover;
+      }
+    }
+    .navigation-controller {
+      position: absolute;
+      margin-top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .button-container {
+        margin: 0 3%;
+      }
+    }
+    .points-controller {
+      position: absolute;
+      margin-top: -35px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .point {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 6px;
+        cursor: pointer;
+        &.selected {
+          background-color: #8f8d92;
+        }
+      }
+    }
+  }
+
+  .carouselcomplex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      width: 90%;
+      .title {
+        h2 {
+          margin: 10px 0 5px 0;
+        }
+      }
+      .text-proyect {
+        h3 {
+          margin: 0 0 10px 0;
+        }
+        p {
+          text-align: justify;
+        }
+      }
+    }
+    .thumbnails-carousel-container {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      .thumbnail-image {
+        width: 25%;
+        height: 25vw;
+        &.border {
+          border: 4px solid #8f8d92;
+        }
+        img {
+          width: 100%;
+          height: 25vw;
+        }
+      }
+    }
+  }
 }
 
-.border {
-  border: 2px solid red;
+@media (min-width: 768px) {
+  .carouselcomplex-general-container {
+    height: calc(100vh - 100px);
+    padding: 40px 0;
+    flex-direction: row;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+    .carouselcomplex-container {
+      width: 50%;
+      justify-content: center;
+      .text {
+        width: 65%;
+        .title {
+          h2 {
+            margin: 0px 0 50px 0;
+            text-align: right;
+          }
+        }
+        .text-proyect {
+          h3 {
+            margin: 0 0 20px 0;
+            text-align: right;
+          }
+          p {
+            line-height: 28px;
+            text-align: right;
+          }
+        }
+        &.reverse {
+          .title {
+            h2 {
+              text-align: left;
+            }
+          }
+          .text-proyect {
+            h3,
+            p {
+              text-align: left;
+            }
+          }
+        }
+      }
+      .thumbnails-carousel-container {
+        margin-top: 40px;
+        width: 65%;
+        justify-content: space-between;
+        .thumbnail-image {
+          width: auto;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &.border {
+            border: 1px solid #8f8d92;
+          }
+          img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+          }
+        }
+      }
+    }
+
+    .carouselcomplex-image-container {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      &.reverse {
+        justify-content: flex-end;
+      }
+      .image-container {
+        width: 85%;
+        height: 100%;
+        img {
+          max-width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .navigation-controller {
+        margin-top: 0;
+        width: 42.5%;
+        .button-container {
+          margin: 0 3%;
+        }
+      }
+      .points-controller {
+        margin-top: 280px;
+        width: 42.5%;
+      }
+    }
+  }
 }

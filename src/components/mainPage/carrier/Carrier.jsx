@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Carrier.scss";
-import CarrierJSON from "../../../data/proyectsCarousel.json";
+import CarrierJSON from "../../../data/carrierCarousel.json";
 
 import CarouselComplex from "../../shared/carouselComplex";
 
