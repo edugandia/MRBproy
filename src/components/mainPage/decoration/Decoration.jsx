@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Decoration.scss';
 
-import DecorationJSON from '../../../data/proyectsCarousel.json'
+import DecorationJSON from '../../../data/decorationCarousel.json'
 
 import CarouselComplex from '../../shared/carouselComplex'
 

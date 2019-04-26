@@ -1,31 +1,23 @@
 [
-    {
-      "id": 0,
-      "name": "0",
-      "description": "hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola ",
-      "thumbnailImage": "",
-      "images": ["", "", "", ""]
-    },
-    {
-      "id": 1,
-      "name": "1",
-      "description": "hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola ",
-      "thumbnailImage": "",
-      "images": ["", "", "", ""]
-    },
-    {
-      "id": 2,
-      "name": "2",
-      "description": "hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola ",
-      "thumbnailImage": "",
-      "images": ["", "", "", ""]
-    },
-    {
-      "id": 3,
-      "name": "3",
-      "description": "hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola ",
-      "thumbnailImage": "",
-      "images": ["", "", "", ""]
-    }
-  ]
-  
+  {
+    "id": 0,
+    "name": "Madrid, Pº Castellana, 11",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptates, fugiat numquam hic aut eveniet ducimus impedit corrupti! Labore voluptate quibusdam quam corporis ea qui doloribus nam cupiditate quis itaque.",
+    "thumbnailImage": "./images/proyects/min5.jpg",
+    "images": ["./images/proyects/5a.jpg", "./images/proyects/5b.jpg", "./images/proyects/5c.jpg", "./images/proyects/5d.jpg"]
+  },
+  {
+    "id": 1,
+    "name": "Alcobendas, C/ Olivos, 25",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptates, fugiat numquam hic aut eveniet ducimus impedit corrupti! Labore voluptate quibusdam quam corporis ea qui doloribus nam cupiditate quis itaque.",
+    "thumbnailImage": "./images/proyects/min6.jpg",
+    "images": ["./images/proyects/6b.jpg", "./images/proyects/6c.jpg", "./images/proyects/6d.jpg"]
+  },
+  {
+    "id": 2,
+    "name": "Murcia, C/ Mayor, 1",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptates, fugiat numquam hic aut eveniet ducimus impedit corrupti! Labore voluptate quibusdam quam corporis ea qui doloribus nam cupiditate quis itaque.",
+    "thumbnailImage": "./images/proyects/min7.jpg",
+    "images": ["./images/proyects/7a.jpg", "./images/proyects/7b.jpg", "./images/proyects/7c.jpg", "./images/proyects/7d.jpg"]
+  }
+]
