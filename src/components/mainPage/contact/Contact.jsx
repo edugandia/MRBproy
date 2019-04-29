@@ -17,7 +17,7 @@ export default class Contact extends Component {
       },
       {
         image: "./images/telefono.png",
-        text: "Llámanos al +34 651 502 291",
+        text: "Llámanos al 651 502 291",
         link: "tel:+34651502291"
       }
     ];
@@ -25,7 +25,7 @@ export default class Contact extends Component {
       <div id="contact-general-container">
         <div className="contact-container">
           <div className="contact-title">
-            <h1>CONTACTO</h1>
+            <h2>CONTACTO</h2>
             <p>Contacta con nosotros y recibe información sin compromiso.</p>
           </div>
           <div className="contact-box-container">
