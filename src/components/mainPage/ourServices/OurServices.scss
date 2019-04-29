@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   .services-container {
+    width: 100%;
     .services-title {
       width: 100%;
       h2 {
@@ -14,8 +15,7 @@
     .services-box-container {
       width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: space-between;
     }
   }
 }
