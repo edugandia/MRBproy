@@ -1,6 +1,6 @@
 .footer-general-container {
   width: 100%;
-  margin: 120px 0 30px 0;
+  margin: 60px 0 30px 0;
   padding: 0 10%;
   display: flex;
   align-items: flex-end;
@@ -13,5 +13,11 @@
       text-decoration: none;
       color: rgb(212, 212, 212);
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-general-container {
+    margin-top: 100px;
   }
 }

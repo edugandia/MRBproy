@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #fff;
   .contact-container {
     width: 90%;
     display: flex;
@@ -25,6 +26,7 @@
 
 @media (min-width: 768px) {
   #contact-general-container {
+    padding-top: 50px;
     .contact-container {
       .contact-box-container {
         width: 600px;
