@@ -9,7 +9,12 @@
     .services-title {
       width: 100%;
       h2 {
+        display: none;
         text-align: center;
+      }
+      h3 {
+        text-align: center;
+        margin-right: -5px;
       }
     }
     .services-box-container {
@@ -25,6 +30,14 @@
     margin: 50px 0 80px;
     .services-container {
       width: 70%;
+      .services-title {
+        h2 {
+          display: block;
+        }
+        h3 {
+          display: none;
+        }
+      }
       .services-box-container {
         width: 100%;
         flex-direction: row;

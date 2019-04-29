@@ -30,6 +30,11 @@ export default class OurServices extends Component {
         <div className="services-container">
           <div className="services-title">
             <h2>NUESTROS SERVICIOS</h2>
+            <h3>
+              NUESTROS
+              <br />
+              SERVICIOS
+            </h3>
           </div>
           <div className="services-box-container">
             {services.map((service, i) => {
