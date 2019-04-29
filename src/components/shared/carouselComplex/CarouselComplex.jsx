@@ -80,9 +80,9 @@ export default class CarouselComplex extends Component {
           <div className="navigation-controller">
             <div
               onClick={() => this.imageSelectedNavigator("substract")}
-              className="button-container"
+              className="button-container reverse"
             >
-              <img src="./images/arrow-left.png" alt="arrow-left" />
+              <img src="./images/arrow-right.png" alt="arrow-left" />
             </div>
             <div
               onClick={() => this.imageSelectedNavigator("add")}
