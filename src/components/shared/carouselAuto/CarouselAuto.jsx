@@ -46,8 +46,9 @@ export default class CarouselAuto extends Component {
           <div className="button-container">
             <img
               onClick={() => this.changePosition("substract")}
-              src="./images/arrow-left.png"
+              src="./images/arrow-right.png"
               alt="left-arrow"
+              className="reverse"
             />
           </div>
           <div className="button-container">
