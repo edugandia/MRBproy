@@ -7,18 +7,18 @@ export default class Contact extends Component {
     const contactInfo = [
       {
         image: "./images/ubicacion.png",
-        text: "C/ Pisuerga 33 28014 Madrid",
+        text: "C/ Ramón Gómez de la Serna 19 28035",
         link: "http://www.google.com/maps/place/pisuerga+33+madrid"
       },
       {
         image: "./images/email.png",
         text: "Escríbenos un e-mail",
-        link: "mailto:hola@marben.com?Subject=Buenos%20días%20..."
+        link: "mailto:proyectos@marbensolution.com?Subject=Buenos%20días%20..."
       },
       {
         image: "./images/telefono.png",
-        text: "Llámanos al 651 502 291",
-        link: "tel:+34651502291"
+        text: "Llámanos al 657 529 663",
+        link: "tel:+34657529663"
       }
     ];
     return (
