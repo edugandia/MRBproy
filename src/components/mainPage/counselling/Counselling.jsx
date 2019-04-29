@@ -7,19 +7,19 @@ export default class Counselling extends Component {
   render() {
     const counsellingData = [
       {
-        image: "./images/disenamos-icon.png",
+        image: "./images/diseñamos.png",
         title: "DISEÑAMOS A TU GUSTO",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi expedita? Deserunt at animi sit ab facilis cum, architecto, iste libero dicta excepturi aliquid! Amet quaerat doloremque reiciendis magnam iure?"
       },
       {
-        image: "./images/hablamos-icon.png",
+        image: "./images/hablamos.png",
         title: "HABLAMOS CONTIGO",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi expedita? Deserunt at animi sit ab facilis cum, architecto, iste libero dicta excepturi aliquid! Amet quaerat doloremque reiciendis magnam iure?"
       },
       {
-        image: "./images/guiamos-icon.png",
+        image: "./images/guiamos.png",
         title: "TE GUIAMOS",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi expedita? Deserunt at animi sit ab facilis cum, architecto, iste libero dicta excepturi aliquid! Amet quaerat doloremque reiciendis magnam iure?"
@@ -35,7 +35,7 @@ export default class Counselling extends Component {
             {counsellingData.map((service, i) => {
               return (
                 <CounsellingBox
-                  image={service.img}
+                  image={service.image}
                   title={service.title}
                   description={service.description}
                   key={i}

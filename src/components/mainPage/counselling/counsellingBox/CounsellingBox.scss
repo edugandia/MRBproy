@@ -1,0 +1,24 @@
+.counselling-box{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    h4{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        text-align: justify;
+    }
+}
+
+@media(min-width: 768px){
+    .counselling-box{
+        width: 300px;
+        margin: 0 40px;
+        p{
+            line-height: 23px;
+        }
+    }
+}
