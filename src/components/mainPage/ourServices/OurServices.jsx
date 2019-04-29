@@ -22,7 +22,7 @@ export default class OurServices extends Component {
         image: "./images/portes.png",
         title: "Portes",
         description: "Transportamos tus cosas a tu nuevo hogar",
-        link: "carries-general-container"
+        link: "carrier-general-container"
       }
     ];
     return (
