@@ -8,7 +8,7 @@ export default class ServiceBox extends Component {
     return (
       <div className="service-box-container">
         <img src={this.props.image} alt={this.props.title} />
-        <h4>{this.props.title}</h4>
+        <b>{this.props.title}</b>
         <p>{this.props.description}</p>
         <div
           onClick={() => scrollToId(this.props.link)}
