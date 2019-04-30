@@ -4,11 +4,7 @@
     "name": "PORTES",
     "description": "Transportamos tus pertenencias y en caso de que no tengas donde meterlas, te las guardamos. (Mudanzas y transportes, servicio guarda muebles).",
     "thumbnailImage": "./images/proyects/min-portes-1.jpg",
-    "images": [
-      "./images/proyects/port1.jpg",
-      "./images/proyects/port2.jpg",
-      "./images/proyects/port4.jpg"
-    ]
+    "images": ["./images/proyects/port2.jpg", "./images/proyects/port4.jpg"]
   },
   {
     "id": 1,
@@ -26,12 +22,12 @@
     "id": 2,
     "name": "OBRA",
     "description": "Sea cual sea tu propuesta, nuestro equipo de especialistas te ayudarán a conseguir lo que quieres. (Electricidad, fontanería, albañilería, pintura, calefacción y aire acondicionado, gas, instalación de tarima y parquet, carpintería de aluminio y PVC, ebanistería, certificados y dictámenes).",
-    "thumbnailImage": "./images/proyects/min-portes-2.jpg",
+    "thumbnailImage": "./images/proyects/min-portes-3.jpg",
     "images": [
-      "./images/proyects/mant1.jpg",
-      "./images/proyects/mant2.jpg",
-      "./images/proyects/mant3.jpg",
-      "./images/proyects/mant4.jpg"
+      "./images/proyects/obra1.jpg",
+      "./images/proyects/obra2.jpg",
+      "./images/proyects/obra3.jpg",
+      "./images/proyects/obra4.jpg"
     ]
   }
 ]

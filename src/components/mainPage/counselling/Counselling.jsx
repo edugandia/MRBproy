@@ -16,13 +16,13 @@ export default class Counselling extends Component {
         image: "./images/hablamos.png",
         title: "HABLAMOS CONTIGO",
         description:
-          "Aquí estamos para ayudarte en cualquier necesidad que tengas en tu hogar."
+          "Aquí estamos para ayudarte en cualquier necesidad que tengas en tu hogar y solventar todas las dudas que te puedan surgir previamente o durante el proyecto."
       },
       {
         image: "./images/guiamos.png",
         title: "TE GUIAMOS",
         description:
-          "Nuestros profesionales están a tu disposición para convertir tu casa en tu hogar."
+          "Nuestros profesionales están a tu disposición para convertir tu casa en tu hogar. Si trabajamos juntos, crearemos algo que te hará sonreír todas las mañanas."
       }
     ];
     return (
