@@ -66,7 +66,7 @@ export default class CarouselAuto extends Component {
             alt={`img-${this.state.position}`}
           />
         </div>
-        <div className="points-controller">
+        <div id="achor-services" className="points-controller">
           {ListOfProyects.map((proy, i) => {
             return (
               <div

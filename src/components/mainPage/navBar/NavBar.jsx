@@ -32,7 +32,7 @@ export default class NavBar extends Component {
 
   render() {
     const navbarInfo = [
-      { text: "SERVICIOS", link: "services-general-container" },
+      { text: "SERVICIOS", link: "achor-services" },
       { text: "PROYECTOS", link: "proyects-general-container" },
       { text: "CONTACTO", link: "contact-general-container" }
     ];
