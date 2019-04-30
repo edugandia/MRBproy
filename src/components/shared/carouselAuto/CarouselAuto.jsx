@@ -39,6 +39,7 @@ export default class CarouselAuto extends Component {
     this.setState({ ...this.state, position });
   };
 
+
   render() {
     return (
       <div className="carouselAuto-general-container">
