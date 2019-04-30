@@ -10,19 +10,19 @@ export default class Counselling extends Component {
         image: "./images/diseñamos.png",
         title: "DISEÑAMOS A TU GUSTO",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi expedita? Deserunt at animi sit ab facilis cum, architecto, iste libero dicta excepturi aliquid! Amet quaerat doloremque reiciendis magnam iure?"
+          "Tu casa es el lugar donde pasas más horas a lo largo de tu vida, por eso tu estilo propio y tus necesidades son lo único que nos importa."
       },
       {
         image: "./images/hablamos.png",
         title: "HABLAMOS CONTIGO",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi expedita? Deserunt at animi sit ab facilis cum, architecto, iste libero dicta excepturi aliquid! Amet quaerat doloremque reiciendis magnam iure?"
+          "Aquí estamos para ayudarte en cualquier necesidad que tengas en tu hogar."
       },
       {
         image: "./images/guiamos.png",
         title: "TE GUIAMOS",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi expedita? Deserunt at animi sit ab facilis cum, architecto, iste libero dicta excepturi aliquid! Amet quaerat doloremque reiciendis magnam iure?"
+          "Nuestros profesionales están a tu disposición para convertir tu casa en tu hogar."
       }
     ];
     return (

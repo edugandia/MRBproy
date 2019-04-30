@@ -24,7 +24,7 @@
       .button-container {
         cursor: pointer;
         margin: 0 3%;
-        &.reverse{
+        &.reverse {
           transform: scaleX(-1);
         }
       }
@@ -62,8 +62,9 @@
         }
       }
       .text-proyect {
+        min-height: 60%;
         h3 {
-          margin: 0 0 10px 0;
+          margin: 20px 0;
         }
         p {
           text-align: justify;

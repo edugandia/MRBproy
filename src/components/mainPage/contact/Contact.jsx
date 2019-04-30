@@ -26,7 +26,10 @@ export default class Contact extends Component {
         <div className="contact-container">
           <div className="contact-title">
             <h2>CONTACTO</h2>
-            <p>Contacta con nosotros y recibe información sin compromiso.</p>
+            <p>
+              Si tienes alguna duda, contacta con nosotros e intentaremos
+              ayudarte para que todas ellas se disipen.
+            </p>
           </div>
           <div className="contact-box-container">
             {contactInfo.map((element, i) => {

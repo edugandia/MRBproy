@@ -11,7 +11,7 @@ export default class Carrier extends Component {
         <CarouselComplex
           isReverse={false}
           dataJSON={CarrierJSON}
-          title="PORTES"
+          title="MANTENIMIENTO"
         />
       </section>
     );

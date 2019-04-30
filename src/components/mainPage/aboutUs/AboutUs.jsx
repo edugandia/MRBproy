@@ -9,10 +9,13 @@ export default class AboutUs extends Component {
           <div className="about-container">
             <h3>SOBRE NOSOTROS</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              modi accusantium! Harum, molestiae! Odio aut expedita temporibus?
-              Maxime placeat numquam facere, nesciunt officia consequuntur
-              deleniti voluptate nam quas animi magni.
+              Marben se especializa en soluciones a la medida de cada cliente.
+            </p>
+            <p>
+              Nuestro objetivo es la satisfacción final del cliente,
+              transmitiendo garantía, calidad y tranquilidad. Los cambios son el
+              motor de la vida, por ello te escuchamos atentamente para crear el
+              espacio que sea un reflejo de tu personalidad y que te haga feliz.
             </p>
           </div>
         </div>
