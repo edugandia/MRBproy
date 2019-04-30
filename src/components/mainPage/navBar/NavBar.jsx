@@ -61,12 +61,11 @@ export default class NavBar extends Component {
           <div className="dropdown-menu fade-in-top">
             {navbarInfo.map((element, i) => {
               return (
-                <div className="nav-link-mb">
+                <div className="nav-link-mb" key={i}>
                   <NavBarLink
                     text={element.text}
                     link={element.link}
                     menuToggle={this.menuToggle}
-                    key={i}
                   />
                 </div>
               );
