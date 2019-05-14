@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Contact.scss";
 import ContactBox from "./contactBox";
+import ModalForm from "./modalForm";
 
 export default class Contact extends Component {
   constructor() {
@@ -37,6 +38,10 @@ export default class Contact extends Component {
     ];
     return (
       <div id="contact-general-container">
+        <ModalForm
+          isModalOpen={this.state.isModalOpen}
+          isModalOpenHandler={this.isModalOpenHandler}
+        />
         <div className="contact-container">
           <div className="contact-title">
             <h2>CONTACTO</h2>
