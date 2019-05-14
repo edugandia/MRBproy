@@ -3,21 +3,35 @@ import "./Contact.scss";
 import ContactBox from "./contactBox";
 
 export default class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isModalOpen: false
+    };
+  }
+
+  isModalOpenHandler = () => {
+    this.setState({ ...this.state, isModalOpen: !this.state.isModalOpen });
+  };
+
   render() {
     const contactInfo = [
       {
         image: "./images/ubicacion.png",
         text: "C/ Ramón Gómez de la Serna 19 28035",
+        canOpenModal: false,
         link: "http://www.google.com/maps/place/pisuerga+33+madrid"
       },
       {
         image: "./images/email.png",
-        text: "Escríbenos un e-mail",
-        link: "mailto:proyectos@marbensolution.com?Subject=Buenos%20días%20..."
+        text: "Contacta con nosotros",
+        canOpenModal: true,
+        link: ""
       },
       {
         image: "./images/telefono.png",
         text: "Llámanos al 657 529 663",
+        canOpenModal: false,
         link: "tel:+34657529663"
       }
     ];
@@ -38,6 +52,8 @@ export default class Contact extends Component {
                   image={element.image}
                   text={element.text}
                   link={element.link}
+                  canOpenModal={element.canOpenModal}
+                  isModalOpenHandler={this.isModalOpenHandler}
                   key={i}
                 />
               );
