@@ -1,17 +1,20 @@
-.contact-box {
+.container-general {
   width: 30%;
-  text-decoration: none;
-  color: #8f8d92;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  img {
-    max-width: 60%;
-  }
-  p {
-    font-size: 16px;
-    text-align: center;
+  .contact-box {
+    width: 100%;
+    text-decoration: none;
+    color: #8f8d92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    img {
+      max-width: 60%;
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 }
 

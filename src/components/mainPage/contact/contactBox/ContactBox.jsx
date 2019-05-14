@@ -4,7 +4,7 @@ import "./ContactBox.scss";
 export default class ContactBox extends Component {
   render() {
     return (
-      <div>
+      <div className="container-general">
         {this.props.canOpenModal ? (
           <div onClick={this.props.isModalOpenHandler} className="contact-box">
             <img src={this.props.image} alt={this.props.text} />
