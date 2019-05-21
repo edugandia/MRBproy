@@ -10,7 +10,7 @@ export default class Decoration extends Component {
     return (
       <section id="decoration-general-container">
       <CarouselComplex 
-      isReverse={true}
+      isReverse={false}
       dataJSON={DecorationJSON}
       title="DECORACIÓN"
       />

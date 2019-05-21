@@ -9,7 +9,7 @@ export default class Carrier extends Component {
     return (
       <section id="carrier-general-container">
         <CarouselComplex
-          isReverse={false}
+          isReverse={true}
           dataJSON={CarrierJSON}
           title="MANTENIMIENTO"
         />

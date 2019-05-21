@@ -20,8 +20,8 @@ export default class MainPage extends Component {
         <OurServices />
         <AboutUs />
         <Proyects />
-        <Decoration />
         <Carrier />
+        <Decoration />
         <Counselling />
         <Contact />
         <Footer />
