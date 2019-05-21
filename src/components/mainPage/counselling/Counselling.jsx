@@ -7,7 +7,7 @@ export default class Counselling extends Component {
   render() {
     const counsellingData = [
       {
-        image: "./images/diseñamos.png",
+        image: "./images/disenamos.png",
         title: "DISEÑAMOS A TU GUSTO",
         description:
           "Tu casa es el lugar donde pasas más horas a lo largo de tu vida, por eso tu estilo propio y tus necesidades son lo único que nos importa."
